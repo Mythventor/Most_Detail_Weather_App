@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradSky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <clipPath id="clipPin">
+      <path d="M50 5 C72 5 90 23 90 45 C90 70 50 95 50 95 C50 95 10 70 10 45 C10 23 28 5 50 5 Z"/>
+    </clipPath>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0F172A" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Pin Shape -->
+  <path d="M50 5 C72 5 90 23 90 45 C90 70 50 95 50 95 C50 95 10 70 10 45 C10 23 28 5 50 5 Z" fill="url(#gradSky)" filter="url(#shadow)"/>
+
+  <!-- Weather glyphs inside pin -->
+  <g clip-path="url(#clipPin)">
+    <!-- Sun -->
+    <circle cx="38" cy="34" r="11" fill="#FDB813"/>
+    <!-- Cloud -->
+    <g>
+      <circle cx="54" cy="45" r="9" fill="white"/>
+      <circle cx="45" cy="47" r="8.5" fill="white"/>
+      <circle cx="63" cy="49" r="7.5" fill="white"/>
+      <rect x="42" y="47" width="27" height="10" rx="5" fill="white"/>
+    </g>
+    <!-- Rain drops -->
+    <g opacity="0.9">
+      <path d="M48 62 C47 60.5 49 60.5 48 62 C48 63.2 46.8 64 46.8 65.2 C46.8 66.2 47.6 67 48.6 67 C49.6 67 50.4 66.2 50.4 65.2 C50.4 64 49.2 63.2 48 62 Z" fill="#60A5FA"/>
+      <path d="M58 62 C57 60.5 59 60.5 58 62 C58 63.2 56.8 64 56.8 65.2 C56.8 66.2 57.6 67 58.6 67 C59.6 67 60.4 66.2 60.4 65.2 C60.4 64 59.2 63.2 58 62 Z" fill="#60A5FA"/>
+    </g>
+  </g>
+</svg>
