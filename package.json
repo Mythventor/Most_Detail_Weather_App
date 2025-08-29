@@ -1,6 +1,6 @@
 {
 
-  "homepage": "https://mythventor.github.io/CS396_Lab/",
+  "homepage": "https://mythventor.github.io/Most_Detail_Weather_App",
   "name": "most-detail-weather-app",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",

@@ -613,7 +613,7 @@ const WeatherApp = ({ isDark }) => {
           <span className={`transition-colors duration-300 ${
             isDark ? 'text-purple-300' : 'text-purple-200'
           }`}>
-            ({units === 'metric' ? '°F, mph, inches' : '°C, km/h, mm'})
+            ({units === 'metric'  ? '°F, mph, inches' : '°C, km/h, mm'})
           </span>
         </button>
         {weatherData && (

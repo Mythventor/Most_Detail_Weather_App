@@ -21,6 +21,7 @@ function App() {
   };
 
   return (
+    
     <div className={`min-h-screen transition-colors duration-300 ${
       isDark 
         ? 'bg-gradient-to-br from-gray-900 to-gray-800' 
