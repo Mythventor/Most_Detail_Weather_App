@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '/public/ChatGPT_Weather_Logo.svg';
+import Logo from '/src/asset/ChatGPT_Weather_Logo.svg';
 
 const Header = ({ isDark }) => {
   return (
